@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Base Design Tokens & Resets (Green & White Theme)
+   ========================================================================== */
+
+:root {
+  /* Green Theme Palette */
+  --primary-dark: #1b4332;
+  --primary: #2d6a4f;
+  --primary-hover: #21513c;
+  --primary-light: #40916c;
+  --accent-mint: #52b788;
+  --accent-light: #74c69d;
+  --accent-subtle: #b7e4c7;
+  --badge-bg: #d8f3dc;
+  
+  /* Backgrounds & Surfaces */
+  --bg-page: #f2f7f4;
+  --bg-card: #ffffff;
+  --bg-input: #ffffff;
+  --bg-input-focus: #f9fdfa;
+  --bg-subtle: #f8faf9;
+  
+  /* Text & Typography */
+  --text-primary: #192e24;
+  --text-secondary: #4a6356;
+  --text-muted: #738c80;
+  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  /* Borders & Shadows */
+  --border-color: #dbe5e0;
+  --border-focus: #2d6a4f;
+  --border-radius-sm: 6px;
+  --border-radius: 10px;
+  --border-radius-lg: 16px;
+  --shadow-sm: 0 1px 3px rgba(27, 67, 50, 0.06);
+  --shadow-card: 0 8px 24px rgba(27, 67, 50, 0.06), 0 2px 8px rgba(27, 67, 50, 0.04);
+  --shadow-popup: 0 12px 32px rgba(27, 67, 50, 0.12);
+  
+  /* Status Colors */
+  --error: #d90429;
+  --error-bg: #fff0f1;
+  --error-border: #f8b4b9;
+  --success: #2d6a4f;
+  --success-bg: #e8f7ee;
+  --info: #0077b6;
+  --info-bg: #e6f4fa;
+  
+  /* Transitions */
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.25s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
