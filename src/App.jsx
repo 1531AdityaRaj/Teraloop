@@ -141,7 +141,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <div className="brand-badge">
-            <TeraloopLogo variant="horizontal" size={42} />
+            <TeraloopLogo height={52} />
           </div>
           <div className="header-meta">
             <span className="pill-tag">Entity Onboarding</span>
