@@ -5,6 +5,7 @@ import LocationDetails from './components/LocationDetails';
 import ContactDetails from './components/ContactDetails';
 import LoginDetails from './components/LoginDetails';
 import SuccessMessage from './components/SuccessMessage';
+import TeraloopLogo from './components/TeraloopLogo';
 import { validateField, validateForm, calculateProgress } from './utils/validation';
 import { generateUserIdSuggestion, generateTemporaryPassword } from './utils/helpers';
 import './App.css';
@@ -140,11 +141,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <div className="brand-badge">
-            <span className="brand-logo">🌱</span>
-            <div className="brand-text">
-              <span className="brand-name">EcoAdmin</span>
-              <span className="brand-sub">Sustainability Platform</span>
-            </div>
+            <TeraloopLogo variant="horizontal" size={42} />
           </div>
           <div className="header-meta">
             <span className="pill-tag">Entity Onboarding</span>
@@ -252,7 +249,7 @@ function App() {
 
       {/* Footer */}
       <footer className="app-footer">
-        <p>EcoAdmin Sustainability Portal &copy; 2026. All rights reserved.</p>
+        <p>Teraloop — Sustainable Tomorrow, Together &copy; 2026. All rights reserved.</p>
       </footer>
     </div>
   );

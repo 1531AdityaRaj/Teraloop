@@ -10,7 +10,7 @@ function SuccessMessage({ savedData, generatedPassword, onReset }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
-    const textToCopy = `--- EcoAdmin Portal Credentials ---\nOrganisation: ${savedData.schoolName}\nCategory: ${savedData.category}\nUser ID: ${savedData.userId}\nTemporary Password: ${generatedPassword}\nNote: Change password on first login.`;
+    const textToCopy = `--- Teraloop Portal Credentials ---\nOrganisation: ${savedData.schoolName}\nCategory: ${savedData.category}\nUser ID: ${savedData.userId}\nTemporary Password: ${generatedPassword}\nNote: Change password on first login.`;
     const success = await copyToClipboard(textToCopy);
     if (success) {
       setCopied(true);
@@ -28,7 +28,7 @@ function SuccessMessage({ savedData, generatedPassword, onReset }) {
 
         <h2 className="success-title">Organisation Successfully Onboarded!</h2>
         <p className="success-subtitle">
-          <strong>{savedData.schoolName}</strong> ({savedData.category}) is now registered on the Sustainability Platform.
+          <strong>{savedData.schoolName}</strong> ({savedData.category}) is now registered on the Teraloop Sustainability Platform.
         </p>
 
         {/* Credentials Box */}
