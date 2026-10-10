@@ -143,8 +143,25 @@ function App() {
           <div className="brand-badge">
             <TeraloopLogo height={52} />
           </div>
+
+          {/* Centered Website Name & Tagline */}
+          <div className="header-center-branding">
+            <div className="header-brand-title">
+              <span className="title-highlight">Teraloop</span>
+              <span className="title-sep">•</span>
+              <span className="title-context">Sustainability Onboarding Portal</span>
+            </div>
+            <div className="header-tagline-text">
+              <span className="tagline-leaf">🌿</span>
+              <span>Empowering Educational Institutions for a Sustainable Tomorrow, Together</span>
+            </div>
+          </div>
+
           <div className="header-meta">
-            <span className="pill-tag">Entity Onboarding</span>
+            <span className="pill-tag">
+              <span className="status-dot"></span>
+              Entity Onboarding
+            </span>
           </div>
         </div>
       </header>
